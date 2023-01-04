@@ -8,8 +8,8 @@ interface Todo {
   completed: boolean;
 }
 
-axios.get(url).then((response) => {
-  const todo = response.data as Todo;
+axios.get(url).then((res) => {
+  const todo = res.data as Todo;
 
   const id = todo.id;
   const title = todo.title;
